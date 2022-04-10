@@ -12,6 +12,10 @@ client_scripts {
     'client.lua'
 }
 
+server_scripts {
+    'server.lua'
+}
+
 files {
     'nui/index.html',
     'nui/index.js',

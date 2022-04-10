@@ -19,7 +19,7 @@
                         <div class='widget'>
                             <p>{{ Calendar.day }}</p>
                             <h1>{{ Calendar.date }}</h1>
-                            <h2>No more events today</h2>
+                            <h2>No Events for today</h2>
                         </div>
                         <div class='crypto'>
                             <h1>Crypto</h1>
@@ -45,20 +45,21 @@
 
                 <div class='page' id='info' v-if='currentPage == "info"'>
                     <div class='content'>
-                        <h1>Info</h1>
+                        <h1>Don't know what to do? Maybe these pages will help you.</h1>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, temporibus odio accusamus quae quod veritatis nihil maiores incidunt quasi vero modi, ad, facere mollitia rem quas dolorem doloribus eaque distinctio?</p>
+                        <p></p>
                         <br>
-                        <h1>Intrebari frecvente</h1>
+                        <h1>FAQ</h1>
                         <br>
                         <p>
-                            <b class='subtitle'>Question?</b><br>
-                            Answer
+                            <b class='subtitle'>I'm new here. What do I do?</b><br>
+                            If you just spawned in, try using the Car Rental. You will find this in Leigon Square. On the map, it will be a purple car blip. You can rent a vehicle from him to get around. He will give you Rental Papers, so if you get pulled over then you have proof that the vehicle is yours.
+                            It might help for you to go directly to the DMV and get your license.
                         </p>
                         <br>
                         <p>
-                            <b class='subtitle'>Question?</b><br>
-                            Answer
+                            <b class='subtitle'>I got my License, Now what do I do?</b><br>
+                            We have many Civilian jobs out there. Making money should be easy. See a vehicle in the vehicleshop thats got your eye? Don't have enought money for it? You can finance it, if that's not what you're looking for then Doing the various jobs or other money making activites around the city will give you enough money to get that vehicle. Make sure you return that Rental Vehicle though.
                         </p>
                         <br>
                     </div>
@@ -70,9 +71,25 @@
                         <br>
                         <p><b>[K]</b> - Menu</p>
                         <p><b>[N]</b> - Talk</p>
+                        <p><b>[M]</b> - Phone</p>
+                        <p><b>[F11]</b> - Change Voice Range</p>
+                        <p><b>[CAPS]</b> - Talk on Radio(must have radio and be connected to channel)</p>
                     </div>
                 </div>
                 
+                <div class='page' id='commands' v-if='currentPage == "commands"'>
+                    <div class='content'>
+                        <h1>COMMANDS</h1>
+                        <p><b>/911 "message"</b> - Dispatch PD to your location. "message" - Helpful information for PD to know.</p>
+                        <p><b>/911a "message"</b> - Dispatch PD to a location anonymously. "message" - Helpful information for PD to know.</p>
+                        <p><b>/911ems "message"</b> - Dispatch EMS to a location. "message" - Helpful information for EMS to know.</p>
+                        <p><b>/mechanic "message"</b> - Dispatch a Mechanic to a location. "message" - Helpful information for the Mechanic to know.</p>
+                        <p><b>/e "emote"</b> - Start an emote. "emote" - Emote your trying to use.</p>
+                        <p><b>/emotemenu</b> - Opens Emote Menu. If you can't find the emote you're looking for using /e this is a good alternative</p>
+                        <p><b>/report "message"</b> - Sends a message to Staff Only. "message" - IMPORTANT information to include to let Staff know what the issue is.</p>
+                        
+                    </div>
+                </div>
             </div>
             <div class='tablet-footer'>
                 <div class='line' v-on:click='switchPage("main")'></div>

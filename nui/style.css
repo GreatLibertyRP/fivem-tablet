@@ -273,3 +273,7 @@ a {
     background: #134E5E;
     background: linear-gradient(to right, #71B280, #134E5E);
 }
+.application > #commands {
+    background: #ffee00;
+    background: linear-gradient(to top, #71B280, #ffee00);
+}
